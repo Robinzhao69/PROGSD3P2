@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
         echo '<script>alert("Niet beveiligd tegen script-injections")</script>';
     }
 
-    if (is_numeric($_POST['huisnummer']) == 0 ) {
+    if (is_numeric($huisnummer) == 0 ) {
         echo '<script>alert("Vul een nummer in")</script>';
     }
 
